@@ -64,7 +64,16 @@
 	<!--  :: ViewResolver 선언 -->	
     <bean id="viewResolver"
 				class="org.springframework.web.servlet.view.InternalResourceViewResolver" />
+				
 	
+<!-- 	<beans:bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		<beans:property name="defaultEncoding" value="utf-8"/>
+		<beans:property name="maxUploadSize" value="104857560"/>
+		<beans:property name="maxUploadSizePerFile" value="2097152"/>
+		<beans:property name="uploadTempDir" value="file:C:\Java\uploat\tmp"/>
+		<beans:property name="maxInMemorySize" value="10485756"/>
+	</beans:bean>
+	 -->
 	
 	<!-- ////////////////////////////////////////// 추가 ,  변경된 부분 ////////////////////////////////////////////////// -->
 	<!--	
